@@ -1,0 +1,23 @@
+[package]
+name = "smpp-pdu"
+version = "0.1.2"
+authors = ["Andy Balaam", "The Rust SMPP Developers"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://gitlab.com/andybalaam/rust-smpp-pdu"
+homepage = "https://gitlab.com/andybalaam/rust-smpp-pdu"
+description = """
+Parsing support for SMPP PDUs.
+"""
+keywords = ["pdu", "smpp", "sms"]
+categories = ["network-programming", "parser-implementations"]
+edition = "2018"
+include = ["src/", "LICENSE-*", "README.md", "CHANGELOG.md"]
+
+[dependencies]
+ascii = "1.0"
+lazy_static = "1.4.0"
+num-derive = "0.3"
+num-traits = "0.2"
+regex = "1"
+tokio = { version = ">=1.0.1", features = ["io-util", "macros", "rt", "sync", "test-util"] }
